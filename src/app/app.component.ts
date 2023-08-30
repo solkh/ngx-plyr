@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
-import { PlyrComponent } from 'ngx-plyr';
-import * as Plyr from 'plyr';
+import { PlyrEvent, Track, TrackKind } from 'plyr';
+import { PlyrComponent } from 'projects/ngx-plyr/src/public_api';
 
 @Component({
   selector: 'app-root',
@@ -66,23 +66,23 @@ export class AppComponent {
 
   poster = 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg';
 
-  tracks = [
+  tracks : Track[]= [
     {
-      kind: 'captions',
+      kind: TrackKind.captions,
       label: 'English',
-      srclang: 'en',
+      srcLang: 'en',
       src: 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt',
       default: true,
     },
     {
-      kind: 'captions',
+      kind: TrackKind.captions,
       label: 'French',
-      srclang: 'fr',
+      srcLang: 'fr',
       src: 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt',
     }
   ];
 
-  played(event: Plyr.PlyrEvent) {
+  played(event: PlyrEvent) {
     console.log('played', event);
   }
 
