@@ -40,7 +40,7 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.GITHUB_PAGES_ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: dist/ngx-plyr-app
+          FOLDER: dist/ngx-plyrr-app
       - name: Publish lib
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

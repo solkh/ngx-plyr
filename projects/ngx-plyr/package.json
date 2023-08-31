@@ -1,7 +1,7 @@
 {
-  "name": "ngx-plyr",
+  "name": "ngx-plyrr",
   "keywords": [
-    "ngx-plyr",
+    "ngx-plyrr",
     "ng-plyr",
     "plyr",
     "angular",
@@ -13,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smnbbrv/ngx-plyr"
+    "url": "https://github.com/smnbbrv/ngx-plyrr"
   },
   "peerDependencies": {
     "@angular/common": ">=8.0.0",

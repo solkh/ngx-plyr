@@ -6,7 +6,7 @@
     [
       "@semantic-release/npm",
       {
-        "pkgRoot": "dist/ngx-plyr"
+        "pkgRoot": "dist/ngx-plyrr"
       }
     ],
     [

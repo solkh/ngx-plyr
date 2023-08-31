@@ -1,6 +1,6 @@
 import Hls from 'hls.js';
 import * as Plyr from 'plyr';
-import { PlyrDriver, PlyrDriverCreateParams, PlyrDriverDestroyParams, PlyrDriverUpdateSourceParams } from 'projects/ngx-plyr/src/public_api';
+import { PlyrDriver, PlyrDriverCreateParams, PlyrDriverDestroyParams, PlyrDriverUpdateSourceParams } from 'projects/ngx-plyrr/src/public_api';
 
 export class HlsjsPlyrDriver implements PlyrDriver {
 

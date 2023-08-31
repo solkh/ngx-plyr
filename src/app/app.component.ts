@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { PlyrEvent, Track, TrackKind } from 'plyr';
-import { PlyrComponent } from 'projects/ngx-plyr/src/public_api';
+import { PlyrComponent } from 'projects/ngx-plyrr/src/public_api';
 
 @Component({
   selector: 'app-root',

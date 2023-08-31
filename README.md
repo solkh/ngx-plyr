@@ -1,17 +1,17 @@
 # Deprecated: not maintained
 
-## ngx-plyr
+## ngx-plyrr
 
 Angular 6+ bindings for [plyr video and audio player](https://github.com/sampotts/plyr). Supports everything that original library supports.
 
-![Workflow status](https://img.shields.io/github/workflow/status/smnbbrv/ngx-plyr/Push)
-[![Coverage Status](https://img.shields.io/coveralls/github/smnbbrv/ngx-plyr/master.svg)](https://coveralls.io/github/smnbbrv/ngx-plyr?branch=master)
-![@ngx-grpc/protoc-gen-ng npm version](https://img.shields.io/npm/v/ngx-plyr)
+![Workflow status](https://img.shields.io/github/workflow/status/smnbbrv/ngx-plyrr/Push)
+[![Coverage Status](https://img.shields.io/coveralls/github/smnbbrv/ngx-plyrr/master.svg)](https://coveralls.io/github/smnbbrv/ngx-plyrr?branch=master)
+![@ngx-grpc/protoc-gen-ng npm version](https://img.shields.io/npm/v/ngx-plyrr)
 
 ## Installation
 
 ```sh
-npm i plyr ngx-plyr
+npm i plyr ngx-plyrr
 ```
 
 ## TypeScript typings
@@ -22,7 +22,7 @@ If you have typings issues please refer to the issue #7 for more info.
 
 ## Demo
 
-[Demo page](https://smnbbrv.github.io/ngx-plyr/)
+[Demo page](https://smnbbrv.github.io/ngx-plyrr/)
 
 ## Usage
 
@@ -38,7 +38,7 @@ Add `"node_modules/plyr/dist/plyr.css"` to the `styles` section of your `angular
 Import `PlyrModule` into the current module's imports:
 
 ```ts
-import { PlyrModule } from 'ngx-plyr';
+import { PlyrModule } from 'ngx-plyrr';
 
 imports: [
   // ...
@@ -110,7 +110,7 @@ The API mostly replicates the original Plyr API. See <https://github.com/sampott
 
 ### Events
 
-ngx-plyr events:
+ngx-plyrr events:
 
 * **plyrInit**: emits a plyr instance when it gets created
 
@@ -186,7 +186,7 @@ You can create your own driver and pass it as input parameter to the `plyr` comp
 
 ## Integrations
 
-To integrate the library with hls.js and dash.js see the corresponding [demo source code](https://github.com/smnbbrv/ngx-plyr/tree/master/src/app). To integrate others, use same approach with a custom Plyr driver.
+To integrate the library with hls.js and dash.js see the corresponding [demo source code](https://github.com/smnbbrv/ngx-plyrr/tree/master/src/app). To integrate others, use same approach with a custom Plyr driver.
 
 ## Changelog
 

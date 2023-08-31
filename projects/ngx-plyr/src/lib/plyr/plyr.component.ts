@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, ElementRef, EventEmitter, Input, NgZone, OnChanges, OnDestroy, Output, Renderer2, SimpleChange, ViewChild } from '@angular/core';
-import * as Plyr from 'plyr';
 import { BehaviorSubject, Observable, Subscription } from 'rxjs';
 import { filter, first, switchMap } from 'rxjs/operators';
 import { DefaultPlyrDriver } from '../plyr-driver/default-plyr-driver';
@@ -41,7 +40,7 @@ export class PlyrComponent implements AfterViewInit, OnChanges, OnDestroy {
 
   @ViewChild('v') private vr: ElementRef;
 
-  // ngx-plyr events
+  // ngx-plyrr events
   @Output() plyrInit = this.playerChange.pipe(filter(player => !!player)) as EventEmitter<Plyr>;
 
   // standard media events

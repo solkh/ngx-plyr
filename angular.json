@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-plyr-app": {
+    "ngx-plyrr-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "aot": true,
-            "outputPath": "dist/ngx-plyr-app",
+            "outputPath": "dist/ngx-plyrr-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -42,7 +42,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "baseHref": "/ngx-plyr/",
+              "baseHref": "/ngx-plyrr/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -69,18 +69,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-plyr-app:build"
+            "browserTarget": "ngx-plyrr-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-plyr-app:build:production"
+              "browserTarget": "ngx-plyrr-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-plyr-app:build"
+            "browserTarget": "ngx-plyrr-app:build"
           }
         },
         "test": {
@@ -115,38 +115,38 @@
         }
       }
     },
-    "ngx-plyr": {
-      "root": "projects/ngx-plyr",
-      "sourceRoot": "projects/ngx-plyr/src",
+    "ngx-plyrr": {
+      "root": "projects/ngx-plyrr",
+      "sourceRoot": "projects/ngx-plyrr/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-plyr/tsconfig.lib.json",
-            "project": "projects/ngx-plyr/ng-package.json"
+            "tsConfig": "projects/ngx-plyrr/tsconfig.lib.json",
+            "project": "projects/ngx-plyrr/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-plyr/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-plyrr/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-plyr/src/test.ts",
-            "tsConfig": "projects/ngx-plyr/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-plyr/karma.conf.js"
+            "main": "projects/ngx-plyrr/src/test.ts",
+            "tsConfig": "projects/ngx-plyrr/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-plyrr/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-plyr/tsconfig.lib.json",
-              "projects/ngx-plyr/tsconfig.spec.json"
+              "projects/ngx-plyrr/tsconfig.lib.json",
+              "projects/ngx-plyrr/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
